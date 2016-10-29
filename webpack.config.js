@@ -1,3 +1,5 @@
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
   entry: './src/app.js',
   output: {
@@ -15,4 +17,5 @@ module.exports = {
       { test: /bootstrap-sass\/assets\/javascripts\//, loader:  'imports?jQuery=jquery' },
     ],
   },
+  postcss: [autoprefixer],
 };
